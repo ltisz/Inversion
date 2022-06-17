@@ -19,8 +19,15 @@ from scipy.signal import argrelextrema, find_peaks
 from statistics import mean
 import matplotlib.dates as mdates
 import matplotlib.ticker as ticker
+import os
+import sys
 
-dataDate="20220527"
+try:
+    os.chdir(os.path.dirname(sys.argv[0]))  #Change working folder to folder that script is in
+except:
+    pass
+
+dataDate="20220610"
 dataDay=dataDate[-4:]
 #filename = "C:/Users/kingg/Documents/data/SPRING-2021-DATA/3521/A0911010007_ZERO_DAT{}.dat".format(dataDate)
 #filename = "C:/Users/kingg/Documents/data/SPRING-2022/520/UAH_A10_{}.dat".format(dataDate)
