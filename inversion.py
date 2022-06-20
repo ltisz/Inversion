@@ -91,7 +91,8 @@ flowmax = round(100*max(satflow))/100
 flowmin = round(100*min(satflow))/100
 
 #Retrieving calibration data
-calibFilename = "C:/Users/kingg/Documents/data/SPRING-2022/520/A10calib.txt"
+#calibFilename = "C:/Users/kingg/Documents/data/SPRING-2022/520/A10calib.txt"
+calibFilename = "A10calib.txt"
 print("Retrieving calibration data from " + calibFilename)
 calibSat = np.genfromtxt(calibFilename, usecols=0)
 calibDia = np.genfromtxt(calibFilename, usecols=1)
